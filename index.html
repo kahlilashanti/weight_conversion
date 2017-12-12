@@ -57,6 +57,14 @@
               </div>
             </div>
 
+            <div class="card card-warning mb-2">
+              <div class="card-block">
+                <h4>Stone</h4>
+                <div id="stoneOutput">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -65,7 +73,7 @@
     function clearInput(){
       document.getElementById('lbsInput').value = ""
       document.getElementById('output').style.visibility = 'hidden';
-      console.log('clear')
+      // console.log('clear')
     }
 
       document.getElementById('output').style.visibility = 'hidden';
@@ -77,6 +85,7 @@
         document.getElementById('gramsOutput').innerHTML = lbs/0.0022046;
         document.getElementById('kgOutput').innerHTML = lbs/2.2046;
         document.getElementById('ozOutput').innerHTML = lbs*16;
+        document.getElementById('stoneOutput').innerHTML = lbs*0.071429;
       })
     </script>
   </body>
